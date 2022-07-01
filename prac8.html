@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                position: relative;
+                border-radius: 70%;
+                animation-name: myanimation;
+                animation-duration: 3s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: 6;
+            }
+            @keyframes myanimation {
+                from, to{
+                    bottom: 0px;
+                    left: 0px;
+                }
+                25%{
+                    bottom: 0px;
+                    left: 300px;
+                }
+                50%{bottom: -300px;
+                    left:300px}
+                75%{bottom: -300px;
+                    left:0px;}
+
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
