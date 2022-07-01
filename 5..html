@@ -10,6 +10,26 @@
 
             hello(10);
             hello(100);
+
+            
         </script>
     </head>
 </html>
+
+
+var num = 10;
+num=100;
+alert(num);
+
+
+
+//전역변수
+var num;
+
+function hello(){
+    //지역변수
+var num=10;
+alert(num);
+}
+hello();
+alert(num);

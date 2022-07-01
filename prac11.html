@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            function add( a, b ){
+                a = a*2;
+                b = b + 10;
+                
+                if ( a + b > 100 ) {
+                    alert( "100보다 크다");
+                } else if ( a+ b > 50 ){
+                    alert("50보다 크다");
+                } else {
+                    alert("50보다 작다.");
+                }
+
+                if ( a+b == 100 ) {
+                     alert("100입니다.");
+                }
+
+                switch(a+b){
+                    case 100:
+                        alert("100입니다.");
+                    break;
+                }
+            }
+
+            // for ( for문 실행 전 설정할 값 = 준비상태; 조건; for문 한 번 돌고 그 다음에 할 거 ){
+
+            // }
+
+            for ( var i = 2; i < 10; i = i + 1 ){
+                for ( var j =1; j <10; j = j+1){
+                    console.log(i + " * " + j + " = " + i*j);
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="add(1,2);">버튼</button>
+        <button type="button" onclick="add(3,2);">버튼</button>
+        <button type="button" onclick="add(10,22);">버튼</button>
+        <button type="button" onclick="add(133,2);">버튼</button>
+    </body>
+</html>
