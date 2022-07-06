@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function apple(){
+                $("img").attr("src", "../img/apple.png");
+                        }
+        </script>
+
+    </head>
+    <body>
+        <img width="500" height="500">
+      
+        <button type="button" onclick="apple()">사과</button>
+        <button type="button" onclick="banana()">바나나</button>
+        <button type="button" onclick="grape()">포도</button>
+        <button type="button" onclick="switchClass()">복숭아</button>
+
+
+    </body>
+</html>
+
+
+
+
+
+function change(fruit){
+     $("img").attr("src","../" + fruit + ".png")
+}
+
+
+
+<body>
+    <button type="button"onclick="change('apple')"사과></button>
+</body>
